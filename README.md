@@ -1,2 +1,2 @@
-# quiz-app
-CS392 Final Project
+# menu
+React App for restaurant menu
