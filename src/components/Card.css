@@ -5,13 +5,14 @@
   padding: 2rem;
   position: relative;
   border: 1px solid black;
+  border-radius: 50px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   @media (max-width: 750px) {
+    width: 80%;
     height: auto;
-    width: 100%;
   }
 }
