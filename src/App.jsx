@@ -41,8 +41,6 @@ function App() {
         <FinalPage
           score={score}
           setScore={setScore}
-          topScore={topScore}
-          setTopScore={setTopScore}
           setShowStartingPage={setShowStartingPage}
           setShowFinalPage={setShowFinalPage}
         />

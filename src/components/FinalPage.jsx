@@ -1,8 +1,14 @@
 import React from "react";
 import Card from "./Card";
 import './FinalPage.css';
+const FinalPage = ({ score, setScore, setShowStartingPage, setShowFinalPage }) => {
+  // Event handler for the Play Again button
+  const handlePlayAgain = () => {
+    setScore(0); // Reset the score
+    setShowStartingPage(true); // Show the starting page
+    setShowFinalPage(false); // Hide the final page
+  };
 
-const FinalPage = () => {
   return (
     <Card>
       <h1 className="header">
@@ -12,12 +18,16 @@ const FinalPage = () => {
         Your score is:
       </h3>
       <h3 className="final-score">
-        10/10
+        {score}
       </h3>
-      <button className="play-again-btn">Play Again</button>
+      <button
+        className="play-again-btn"
+        onClick={handlePlayAgain} // Attach the event handler here
+      >
+        Play Again
+      </button>
     </Card>
   );
-
 }
 
 export default FinalPage;

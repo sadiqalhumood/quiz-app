@@ -26,7 +26,6 @@ const StartingPage = ({ setShowStartingPage, setShowQuestionsPage, topScore, set
                 onChange={(e) => setInputValue(e.target.value)}
             />
             <button className='start-button' onClick={handleStartQuiz}>Start Quiz</button>
-            <p className='top-score'>High Score: <span>{topScore}</span></p>
         </Card>
     );
 }

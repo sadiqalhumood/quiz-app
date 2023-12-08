@@ -3,14 +3,14 @@ import Card from "./Card";
 import "./QuizStyles.css";
 
 const Question = ({
-                      questionIndex,
-                      setQuestionIndex,
-                      questions,
-                      setShowQuestionsPage,
-                      setShowFinalPage,
-                      score,
-                      setScore,
-                  }) => {
+    questionIndex,
+    setQuestionIndex,
+    questions,
+    setShowQuestionsPage,
+    setShowFinalPage,
+    score,
+    setScore,
+}) => {
     const handleClick = (isCorrect) => {
         if (questionIndex < 9) {
             if (isCorrect) {
@@ -18,12 +18,12 @@ const Question = ({
             }
             setQuestionIndex((prevIndex) => prevIndex + 1);
         }
-        else{
-            if(isCorrect) {
+        else {
+            if (isCorrect) {
                 setScore((score) => score += 100);
             }
             setShowQuestionsPage(false);
-            setQuestionIndex(true);
+            setShowFinalPage(true);
         }
     };
 
