@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './QuizStyles.css';
 
 const QuizContainer = () => {
     // example questions
@@ -15,41 +16,36 @@ const QuizContainer = () => {
             options: ['Charles Dickens', 'William Shakespeare', 'Leo Tolstoy', 'Mark Twain'],
             answer: 'William Shakespeare'
         },
-        {
-            id: 3,
-            questionText: 'Who wrote Hamlet?',
-            options: ['Charles Dickens', 'William Shakespeare', 'Leo Tolstoy', 'Mark Twain'],
-            answer: 'William Shakespeare'
-        },
+        // ... add more questions as needed
     ];
 
     // state to track the current question
     const [currentQuestion, setCurrentQuestion] = useState(0);
 
-    // handles answer submission
+    // function to handle answer submission
     const handleSubmit = (option) => {
-        // checks the answer and move to the next question
+        // logic to check the answer and move to the next question
         if (option === questions[currentQuestion].answer) {
-            console.log('Correct!');
+            console.log('correct!');
         } else {
-            console.log('Incorrect!');
+            console.log('incorrect!');
         }
 
-        // moves to the next question
+        // move to the next question
         if (currentQuestion < questions.length - 1) {
             setCurrentQuestion(currentQuestion + 1);
         } else {
-            // End of quiz logic
-            console.log('Quiz Finished');
+            // end of quiz logic
+            console.log('quiz finished');
         }
     };
 
     return (
-        <div>
+        <div className="question">
             <h2>{questions[currentQuestion].questionText}</h2>
-            <div>
+            <div className="answers">
                 {questions[currentQuestion].options.map((option, index) => (
-                    <button key={index} onClick={() => handleSubmit(option)}>
+                    <button key={index} className="answer" onClick={() => handleSubmit(option)}>
                         {option}
                     </button>
                 ))}
