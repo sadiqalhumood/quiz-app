@@ -1,7 +1,7 @@
-import React from "react"
+/*import React from "react"
 import { Questions } from "./Questions"
-const QuestionsPage = () =› {
+const QuestionsPage = () => {
     return (
-        <Question />
+        <Question/>
 </ >
-export default QuestionsPage;
+export default QuestionsPage;*/
