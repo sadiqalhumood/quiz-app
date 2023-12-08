@@ -1,21 +1,21 @@
 export const questions = [
     {
-        questionText: "How long is an Olympic swimming pool (in meters)?",
+        questionText: "Why is indentation important in HTML coding?",
         answers: [
             {
-                answerText: "50",
+                answerText: "It makes the code run faster",
+                correctAnswer: false,
+            },
+            {
+                answerText: "It's a requirement in HTML syntax",
+                correctAnswer: false,
+            },
+            {
+                answerText: "It improves code readability and maintainability",
                 correctAnswer: true,
             },
             {
-                answerText: "60",
-                correctAnswer: false,
-            },
-            {
-                answerText: "75",
-                correctAnswer: false,
-            },
-            {
-                answerText: "100",
+                answerText: "It's used to hide code from other developers",
                 correctAnswer: false,
             },
         ],
