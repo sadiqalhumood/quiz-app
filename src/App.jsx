@@ -21,7 +21,6 @@ function App() {
                     setShowStartingPage={setShowStartingPage}
                     setShowQuestionsPage={setShowQuestionsPage}
                     topScore={topScore}
-                    username={username}
                     setUsername={setUsername}
                 />
             )}
