@@ -1,4 +1,43 @@
-import React, { useState } from 'react';
+import React from "react";
+import Card from "./Card";
+import './QuizStyles.css';
+const Question = () => {
+    return (
+        <Card>
+            <h1 className="question">Example question</h1>
+
+            <div className="answers">
+                <div className="answer">
+                    <p>Answer</p>
+                </div>
+                <div className="answer">
+                    <p>Answer</p>
+                </div>
+                <div className="answer">
+                    <p>Answer</p>
+                </div>
+                <div className="answer">
+                    <p>Answer</p>
+                </div>
+            </div>
+
+            <p className="score">
+                Score: <span>0</span>
+            </p>
+
+            <p className="question_number">
+                Question <span>1</span>/10
+            </p>
+        </Card>
+    );
+};
+
+export default Question;
+
+
+
+
+/*import React, { useState } from 'react';
 import './QuizStyles.css';
 
 const QuizContainer = () => {
@@ -54,4 +93,4 @@ const QuizContainer = () => {
     );
 };
 
-export default QuizContainer;
+export default QuizContainer;*/
