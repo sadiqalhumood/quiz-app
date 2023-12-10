@@ -6,8 +6,7 @@ import QuestionsPage from "./components/QuestionsPage";
 
 function App() {
 
-
-
+  /* State variables to manage component visibility, scores, and username */
   const [showStartingPage, setShowStartingPage] = useState(true);
   const [showQuestionsPage, setShowQuestionsPage] = useState(false);
   const [showFinalPage, setShowFinalPage] = useState(false);
@@ -17,38 +16,41 @@ function App() {
 
   const [username, setUsername] = useState("");
 
+  /* Render different components based on state */
   return (
-    <>
-      {showStartingPage && (
-        <StartingPage
-          setShowStartingPage={setShowStartingPage}
-          setShowQuestionsPage={setShowQuestionsPage}
-          topScore={topScore}
-          setUsername={setUsername}
-        />
-      )}
+      <>
+        {showStartingPage && (
+            /* Render StartingPage component*/
+            <StartingPage
+                setShowStartingPage={setShowStartingPage}
+                setShowQuestionsPage={setShowQuestionsPage}
+                topScore={topScore}
+                setUsername={setUsername}
+            />
+        )}
 
-      {showQuestionsPage && (
-        <QuestionsPage
-          score={score}
-          setScore={setScore}
-          setShowQuestionsPage={setShowQuestionsPage}
-          setShowFinalPage={setShowFinalPage}
-        />
-      )}
+        {showQuestionsPage && (
+            /* Render QuestionsPage component */
+            <QuestionsPage
+                score={score}
+                setScore={setScore}
+                setShowQuestionsPage={setShowQuestionsPage}
+                setShowFinalPage={setShowFinalPage}
+            />
+        )}
 
-      {showFinalPage && (
-        <FinalPage
-          score={score}
-          setScore={setScore}
-          setShowStartingPage={setShowStartingPage}
-          setShowFinalPage={setShowFinalPage}
-        />
-      )}
-    </>
+        {showFinalPage && (
+            /* Render FinalPage component*/
+            <FinalPage
+                score={score}
+                setScore={setScore}
+                setShowStartingPage={setShowStartingPage}
+                setShowFinalPage={setShowFinalPage}
+            />
+        )}
+      </>
   );
-
 }
 
-
 export default App;
+
