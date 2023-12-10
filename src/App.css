@@ -1,28 +1,23 @@
-/* center the text in the app */
-.app {
+.App {
   text-align: center;
 }
 
-/* styling for the app logo */
-.app-logo {
+.App-logo {
   height: 40vmin;
   pointer-events: none;
 
-  /* responsive styling for smaller screens */
   @media (max-width: 600px) {
     height: 30vmin;
   }
 }
 
-/* animation for the app logo spin */
 @media (prefers-reduced-motion: no-preference) {
-  .app-logo {
-    animation: app-logo-spin infinite 20s linear;
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
 }
 
-/* styling for the app header */
-.app-header {
+.App-header {
   background-color: #282c34;
   min-height: 50vh;
   display: flex;
@@ -33,13 +28,11 @@
   color: white;
 }
 
-/* styling for app links */
-.app-link {
+.App-link {
   color: #61dafb;
 }
 
-/* keyframes for the app logo spin animation */
-@keyframes app-logo-spin {
+@keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
