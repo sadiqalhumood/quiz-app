@@ -1,8 +1,10 @@
+/* Center-aligns the question text and adds vertical spacing */
 .question {
     text-align: center;
     margin: 2rem 0;
 }
 
+/* Styles the container of the answer options to layout the children in a column */
 .answers {
     display: flex;
     flex-direction: column;
@@ -10,6 +12,7 @@
     align-items: center;
 }
 
+/* Applies styles to each answer option to make them look like clickable buttons */
 .answer {
     padding: 10px;
     background-color: black;
@@ -24,16 +27,20 @@
     border-radius: 5px;
 }
 
+/* Changes the appearance of answer options on hover to indicate interactivity */
 .answer:hover {
     background-color: deepskyblue;
 }
 
+/* Styles the score display with bold text and positions it at the bottom-left of its container */
 .score {
     font-weight: bold;
     position: absolute;
     bottom: 1rem;
     left: 1rem;
 }
+
+/* Styles the question number display with bold text and positions it at the bottom-right of its container */
 .question_number {
     font-weight: bold;
     position: absolute;
