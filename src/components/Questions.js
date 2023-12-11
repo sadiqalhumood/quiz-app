@@ -4,14 +4,14 @@ import "./QuizStyles.css";
 
 // component for displaying a question and its answers
 const Question = ({
-                      questionIndex, // index of the current question
-                      setQuestionIndex, // function to update the current question index
-                      questions, // array of all questions
-                      setShowQuestionsPage, // function to hide the questions page
-                      setShowFinalPage, // function to show the final page
-                      score, // current score
-                      setScore, // function to update the score
-                  }) => {
+    questionIndex, // index of the current question
+    setQuestionIndex, // function to update the current question index
+    questions, // array of all questions
+    setShowQuestionsPage, // function to hide the questions page
+    setShowFinalPage, // function to show the final page
+    score, // current score
+    setScore, // function to update the score
+}) => {
     // handles the click on an answer
     const handleClick = (isCorrect) => {
         if (questionIndex < 9) { // checks if there are more questions

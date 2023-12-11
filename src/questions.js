@@ -21,213 +21,199 @@ export const questions = [
         ],
     },
     {
-        questionText: "What is the capital of France?",
+        questionText: "What does HTML stand for?",
         answers: [
             {
-                answerText: "Berlin",
-                correctAnswer: false,
-            },
-            {
-                answerText: "Madrid",
-                correctAnswer: false,
-            },
-            {
-                answerText: "Paris",
+                answerText: "Hypertext Markup Language",
                 correctAnswer: true,
             },
             {
-                answerText: "Rome",
+                answerText: "High-Level Text Management Language",
+                correctAnswer: false,
+            },
+            {
+                answerText: "Human-Tested Markup Language",
+                correctAnswer: false,
+            },
+            {
+                answerText: "Hyper Transfer Machine Language",
                 correctAnswer: false,
             },
         ],
     },
     {
-        questionText: "Which element has the chemical symbol 'O'?",
+        questionText: "Which CSS selector targets elements with a specific class name?",
         answers: [
             {
-                answerText: "Gold",
+                answerText: "#classname",
                 correctAnswer: false,
             },
             {
-                answerText: "Oxygen",
+                answerText: ".classname",
                 correctAnswer: true,
             },
             {
-                answerText: "Hydrogen",
+                answerText: "*classname",
                 correctAnswer: false,
             },
             {
-                answerText: "Helium",
+                answerText: "classname",
                 correctAnswer: false,
             },
         ],
     },
     {
-        questionText: "Who wrote 'To Kill a Mockingbird'?",
+        questionText: "Does font size specified in the body tag get inherited by all child elements in CSS?",
         answers: [
             {
-                answerText: "Ernest Hemingway",
-                correctAnswer: false,
-            },
-            {
-                answerText: "William Shakespeare",
-                correctAnswer: false,
-            },
-            {
-                answerText: "Harper Lee",
+                answerText: "Yes, always",
                 correctAnswer: true,
             },
             {
-                answerText: "Mark Twain",
+                answerText: "No, never",
+                correctAnswer: false,
+            },
+            {
+                answerText: "Only if `inherit` is specified",
+                correctAnswer: false,
+            },
+            {
+                answerText: "Depends on the child element",
                 correctAnswer: false,
             },
         ],
     },
     {
-        questionText: "Which planet is known as the Red Planet?",
+        questionText: "How do you call an external JavaScript file named 'app.js'?",
         answers: [
             {
-                answerText: "Jupiter",
+                answerText: "<script href='app.js'></script>",
                 correctAnswer: false,
             },
             {
-                answerText: "Mars",
+                answerText: "<script src='app.js'></script>",
                 correctAnswer: true,
             },
             {
-                answerText: "Saturn",
+                answerText: "<javascript src='app.js'></javascript>",
                 correctAnswer: false,
             },
             {
-                answerText: "Venus",
+                answerText: "<js file='app.js'></js>",
                 correctAnswer: false,
             },
         ],
     },
     {
-        questionText: "What is the smallest prime number?",
+        questionText: "How do you display 'Hello' in an alert box?",
         answers: [
             {
-                answerText: "1",
+                answerText: "alertBox('Hello');",
                 correctAnswer: false,
             },
             {
-                answerText: "2",
+                answerText: "alert('Hello');",
                 correctAnswer: true,
             },
             {
-                answerText: "3",
+                answerText: "show('Hello');",
                 correctAnswer: false,
             },
             {
-                answerText: "5",
+                answerText: "msg('Hello');",
                 correctAnswer: false,
             },
         ],
     },
     {
-        questionText: "In what year did the Titanic sink?",
+        questionText: "How do you create a function named 'sayHello'?",
         answers: [
             {
-                answerText: "1912",
+                answerText: "function sayHello()",
                 correctAnswer: true,
             },
             {
-                answerText: "1910",
+                answerText: "function: sayHello()",
                 correctAnswer: false,
             },
             {
-                answerText: "1915",
+                answerText: "function = sayHello()",
                 correctAnswer: false,
             },
             {
-                answerText: "1920",
+                answerText: "new Function sayHello()",
                 correctAnswer: false,
             },
         ],
     },
+
+    // React Question
     {
-        questionText: "What is the largest mammal in the world?",
+        questionText: "What is the primary use of React?",
         answers: [
             {
-                answerText: "Elephant",
+                answerText: "Building mobile apps",
                 correctAnswer: false,
             },
             {
-                answerText: "Great White Shark",
-                correctAnswer: false,
-            },
-            {
-                answerText: "Blue Whale",
+                answerText: "Creating interactive user interfaces for web applications",
                 correctAnswer: true,
             },
             {
-                answerText: "Giraffe",
+                answerText: "Managing backend servers",
+                correctAnswer: false,
+            },
+            {
+                answerText: "Data analysis and machine learning",
                 correctAnswer: false,
             },
         ],
     },
+
+    // React Native Question
     {
-        questionText: "What does 'www' stand for in a website browser?",
+        questionText: "What is React Native mainly used for?",
         answers: [
             {
-                answerText: "World Wide Web",
+                answerText: "Building native mobile apps using JavaScript and React",
                 correctAnswer: true,
             },
             {
-                answerText: "Wild Wild West",
+                answerText: "Creating web applications",
                 correctAnswer: false,
             },
             {
-                answerText: "Wide Width Wares",
+                answerText: "Designing user interfaces for desktop applications",
                 correctAnswer: false,
             },
             {
-                answerText: "World Wide Wonders",
+                answerText: "Developing server-side applications",
                 correctAnswer: false,
             },
         ],
     },
+
+    // Next.js Question
     {
-        questionText: "How many continents are there on Earth?",
+        questionText: "What is the main purpose of using Next.js?",
         answers: [
             {
-                answerText: "5",
+                answerText: "Building scalable and efficient backend servers",
                 correctAnswer: false,
             },
             {
-                answerText: "6",
+                answerText: "Creating static websites",
                 correctAnswer: false,
             },
             {
-                answerText: "7",
+                answerText: "Developing server-rendered React applications and static websites",
                 correctAnswer: true,
             },
             {
-                answerText: "8",
+                answerText: "Data processing and analysis",
                 correctAnswer: false,
             },
         ],
     },
-    {
-        questionText: "What is the main ingredient in guacamole?",
-        answers: [
-            {
-                answerText: "Tomatoes",
-                correctAnswer: false,
-            },
-            {
-                answerText: "Avocado",
-                correctAnswer: true,
-            },
-            {
-                answerText: "Lime",
-                correctAnswer: false,
-            },
-            {
-                answerText: "Onion",
-                correctAnswer: false,
-            },
-        ],
-    }
+
 ];
