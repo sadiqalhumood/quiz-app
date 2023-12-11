@@ -23,7 +23,7 @@ const StartingPage = ({ setShowStartingPage, setShowQuestionsPage, topScore, set
                 className='input-user'
                 placeholder="Enter your name"
                 value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
+                onChange={(e) => setInputValue(e.target.value)} // Input field for user name
             />
             <button className='start-button' onClick={handleStartQuiz}>Start Quiz</button>
         </Card>

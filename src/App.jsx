@@ -7,18 +7,21 @@ import QuestionsPage from "./components/QuestionsPage";
 function App() {
 
 
-
+  // State for controlling the visibility of the pages
   const [showStartingPage, setShowStartingPage] = useState(true);
   const [showQuestionsPage, setShowQuestionsPage] = useState(false);
   const [showFinalPage, setShowFinalPage] = useState(false);
 
+  // State for controlling the score
   const [score, setScore] = useState(0);
   const [topScore, setTopScore] = useState(0);
 
+  // State for controlling the username
   const [username, setUsername] = useState("");
 
   return (
     <>
+
       {showStartingPage && (
         <StartingPage
           setShowStartingPage={setShowStartingPage}
@@ -28,6 +31,7 @@ function App() {
         />
       )}
 
+
       {showQuestionsPage && (
         <QuestionsPage
           score={score}
@@ -36,6 +40,7 @@ function App() {
           setShowFinalPage={setShowFinalPage}
         />
       )}
+
 
       {showFinalPage && (
         <FinalPage
