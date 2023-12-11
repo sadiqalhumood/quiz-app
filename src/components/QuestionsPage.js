@@ -4,11 +4,11 @@ import Question from "./Questions"; // import the Question component
 
 // QuestionsPage component that will manage which question to show
 const QuestionsPage = ({
-                           score, // current score
-                           setScore, // function to update the score
-                           setShowQuestionsPage, // function to hide the questions page
-                           setShowFinalPage, // function to show the final page
-                       }) => {
+    score, // current score
+    setScore, // function to update the score
+    setShowQuestionsPage, // function to hide the questions page
+    setShowFinalPage, // function to show the final page
+}) => {
     // state hook to keep track of the current question index
     const [questionIndex, setQuestionIndex] = useState(0);
 
