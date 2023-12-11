@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import './StartingPage.css';
 import Card from './Card';
 
+{/* StartingPage component renders the starting screen of the quiz,
+it contains a username input field and a button to start the quiz.
+*/}
+
 const StartingPage = ({ setShowStartingPage, setShowQuestionsPage, topScore, setUsername }) => {
     const [inputValue, setInputValue] = useState("");
 
