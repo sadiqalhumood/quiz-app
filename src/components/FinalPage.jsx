@@ -18,7 +18,7 @@ const FinalPage = ({ score, setScore, setShowStartingPage, setShowFinalPage }) =
         Your score is:
       </h3>
       <h3 className="final-score">
-        {score}
+        {score} / 1000
       </h3>
       <button
         className="play-again-btn"
