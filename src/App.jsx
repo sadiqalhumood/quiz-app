@@ -4,6 +4,7 @@ import FinalPage from "./components/FinalPage";
 import StartingPage from "./components/StartingPage";
 import QuestionsPage from "./components/QuestionsPage";
 
+/* This component manages the state and rendering of different pages in the quiz application. */
 function App() {
 
   /* State variables to manage component visibility, scores, and username */
